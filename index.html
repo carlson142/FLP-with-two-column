@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <main>
+      <!--HEADER-->
+      <div class="header">
+        <!--TOP PART OF HEADER-->
+        <div class="header__top">
+          <div class="header__top--logo">
+            <img src="img/logo.svg" alt="logo" class="header__top--img" />
+          </div>
+
+          <ul class="header__top--list">
+            <li class="header__top--item">
+              <a href="#" class="header__top--link">Features</a>
+            </li>
+            <li class="header__top--item">
+              <a href="#" class="header__top--link">Team</a>
+            </li>
+            <li class="header__top--item">
+              <a href="#" class="header__top--link">Sign In</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--MAIN COMPONENT OF HEADER-->
+        <div class="header__component">
+          <!--LEFT SIDE-->
+          <div class="component__left">
+            <h1 class="component__left--heading">
+              All your files in one secure location, accessible anywhere.
+            </h1>
+
+            <p class="component__left--text">
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+
+            <div class="component__left--try">
+              <input
+                type="email"
+                id="email"
+                class="component__left--input"
+                placeholder="Enter your email..."
+                required
+              />
+              <button type="submit" class="cta" id="cta1">Get Started</button>
+              <div class="error">Please check your email!</div>
+            </div>
+          </div>
+
+          <!--RIGHT SIDE-->
+          <div class="component__right">
+            <img
+              src="img/illustration-1.svg"
+              alt="ill 1"
+              class="component__right--img"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!--SECTION 1-->
+      <div class="section-1">
+        <div class="section-1__left">
+          <h2 class="section-1__left--heading">
+            Stay productive, wherever you are
+          </h2>
+
+          <p class="section-1__left--text">
+            Never let location be an issue when accessing your files. Fylo has
+            you covered for all of your file storage needs.
+          </p>
+
+          <p class="section-1__left--text">
+            Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!
+          </p>
+
+          <div class="section-1__left--btn">
+            <a href="#" class="section-1__left--link">See how Fylo works</a>
+            <svg class="section-1__left--icon">
+              <use xlink:href="img/symbol-defs.svg#icon-arrow-right2"></use>
+            </svg>
+          </div>
+
+          <!--Review-->
+          <div class="section-1__left--component">
+            <div class="component__quotes">
+              <img
+                src="img/icon-quotes.svg"
+                alt="quotes"
+                class="component__quotes--img"
+              />
+            </div>
+            <div class="component__text">
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </div>
+
+            <div class="component__person">
+              <img
+                src="img/avatar-testimonial.jpg"
+                alt="avatar"
+                class="component__person--img"
+              />
+
+              <div class="component__person--info">
+                <span class="component__person--name">Kyle Burton</span>
+                <span class="component__person--job"
+                  >Founder & CEO, Huddle</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--RIGHT SIDE-->
+        <div class="section-1__right">
+          <img
+            src="img/illustration-2.svg"
+            alt="ill2"
+            class="section-1__right--img"
+          />
+        </div>
+      </div>
+
+      <!--SECTION 2-->
+      <div class="section-2">
+        <div class="section-2__left">
+          <h2 class="section-2__left--heading">Get early access today</h2>
+          <p class="section-2__left--text">
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+
+        <div class="section-2__right">
+          <div class="section-2__right--try">
+            <input
+              type="email"
+              id="email2"
+              class="section-2__right--input"
+              placeholder="email@example.com"
+              required
+            />
+            <button type="submit" class="cta" id="cta2">
+              Get Started For Free
+            </button>
+            <div class="error2" id="error2">Please check your email</div>
+          </div>
+        </div>
+      </div>
+
+      <!--FOOTER-->
+      <div class="footer">
+        <div class="footer__logo">
+          <img src="img/logo2.svg" alt="logo" />
+        </div>
+
+        <div class="footer__component">
+          <!--card 2-->
+          <div class="footer__card footer__card-2">
+            <div class="block">
+              <div class="footer__card--icon">
+                <img src="img/icon-phone.svg" alt="phone" />
+              </div>
+              <p class="footer__card--text">Phone +1-543-123-4567</p>
+            </div>
+
+            <div class="block">
+              <div class="footer__card--icon">
+                <img src="img/icon-email.svg" alt="email" />
+              </div>
+              <p class="footer__card--text">example@fylo.com</p>
+            </div>
+          </div>
+
+          <!--card 3-->
+          <div class="footer__card footer__card-3">
+            <!--list 1-->
+            <ul class="footer__card--list">
+              <li class="footer__card--item" style="width: 66px">
+                <a href="#" class="footer__card--link"> About Us</a>
+              </li>
+              <li class="footer__card--item">
+                <a href="#" class="footer__card--link"> Jobs</a>
+              </li>
+              <li class="footer__card--item">
+                <a href="#" class="footer__card--link"> Press</a>
+              </li>
+              <li class="footer__card--item">
+                <a href="#" class="footer__card--link"> Blog</a>
+              </li>
+            </ul>
+
+            <!--list 2-->
+            <ul class="footer__card--list">
+              <li class="footer__card--item">
+                <a href="#" class="footer__card--link"> Contact Us</a>
+              </li>
+              <li class="footer__card--item">
+                <a href="#" class="footer__card--link"> Terms</a>
+              </li>
+              <li class="footer__card--item">
+                <a href="#" class="footer__card--link"> Privacy</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--card 4-->
+          <div class="footer__card footer__card-4">
+            <div class="icon-container">
+              <svg class="footer__card--icons">
+                <use xlink:href="img/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </div>
+            <div class="icon-container">
+              <svg class="footer__card--icons">
+                <use xlink:href="img/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </div>
+            <div class="icon-container">
+              <svg class="footer__card--icons">
+                <use xlink:href="img/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

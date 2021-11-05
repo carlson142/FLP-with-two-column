@@ -1,0 +1,46 @@
+:root {
+  --color-primary-very-dark-blue: hsl(243, 87%, 12%);
+  --color-primary-desaturated-blue: hsl(238, 22%, 44%);
+
+  --color-secondary-bright-blue: hsl(224, 93%, 58%);
+  --color-secondary-moderate-cyan: hsl(170, 45%, 43%);
+  --color-secondary-red: hsl(0, 100%, 63%);
+
+  --color-neutral-light-grayish-blue: hsl(240, 75%, 98%);
+  --color-neutral-light-gray: hsl(0, 0%, 75%);
+
+  --font-family1: "Open Sans", sans-serif; //Body
+  --font-family2: "Raleway", sans-serif; // Headings, Call-to-actions, Header Navigation
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family1);
+
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  height: 100%;
+  width: 144rem;
+
+  @media (max-width: 965px) {
+    width: 375px;
+  }
+}
